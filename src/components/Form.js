@@ -13,6 +13,7 @@ function Form() {
       <Input type="text" id="l-name" label="Last Name" />
       <Input type="text" id="title" label="Title" />
       <Input type="number" id="phone" label="phone Number" />
+      <Input type="email" id="email" label="Email" />
       <div className=" inline-flex flex-col mx-4">
         <label htmlFor="address" className="text-stone-500">
           Address
