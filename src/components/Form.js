@@ -20,7 +20,7 @@ function Form() {
         </label>
         <input type="text" id="l-name" className="bg-gray-100" />
       </div>
-      <div className=" inline-flex flex-col mx-4">
+      <div className=" inline-flex flex-col mx-4 col-span-2">
         <label htmlFor={"title"} className="text-stone-500 text-center">
           Title
         </label>
@@ -32,13 +32,13 @@ function Form() {
         </label>
         <input type="number" id="phone" className="bg-gray-100" />
       </div>
-      <div className=" inline-flex flex-col mx-4">
+      <div className=" inline-flex flex-col mx-4 col-span-2">
         <label htmlFor={"email"} className="text-stone-500 text-center">
           Email Address
         </label>
         <input type="email" id="email" className="bg-gray-100" />
       </div>
-      <div className=" inline-flex flex-col mx-4">
+      <div className=" inline-flex flex-col mx-4 col-span-3">
         <label htmlFor="address" className="text-stone-500 text-center">
           Address
         </label>
