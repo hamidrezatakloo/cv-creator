@@ -1,10 +1,10 @@
 import Input from "./Input";
 function Form() {
   return (
-    <form className="col-span-6">
+    <form className="col-span-6 grid grid-cols-3">
       <label
         htmlFor="cv-image"
-        className="block w-[150px] h-[150px] bg-gray-300 flex justify-center items-center px-4 py-4 cursor-pointer"
+        className="block row-span-2 bg-gray-300 flex justify-center items-center px-4 py-4 cursor-pointer"
       >
         no file chosen
       </label>
