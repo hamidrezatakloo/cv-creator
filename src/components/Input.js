@@ -1,6 +1,6 @@
 function Input({ type, w = "100px", h = "30px", id, label }) {
   return (
-    <span className=" inline-flex flex-col mx-4">
+    <div className=" inline-flex flex-col mx-4">
       <label htmlFor={id} className="text-stone-500">
         {label}
       </label>
@@ -10,7 +10,7 @@ function Input({ type, w = "100px", h = "30px", id, label }) {
         className="bg-gray-100"
         style={{ width: w, height: h }}
       />
-    </span>
+    </div>
   );
 }
 

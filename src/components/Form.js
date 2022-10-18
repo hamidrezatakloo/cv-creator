@@ -13,7 +13,7 @@ function Form() {
       <Input type="text" id="l-name" label="Last Name" />
       <Input type="text" id="title" label="Title" />
       <Input type="number" id="phone" label="phone Number" />
-      <span className=" inline-flex flex-col mx-4">
+      <div className=" inline-flex flex-col mx-4">
         <label htmlFor="address" className="text-stone-500">
           Address
         </label>
@@ -23,7 +23,7 @@ function Form() {
           cols="50"
           className="bg-gray-100"
         ></textarea>
-      </span>
+      </div>
     </form>
   );
 }
