@@ -9,6 +9,10 @@ function Form() {
         no file chosen
       </label>
       <input type="file" id="cv-image" className="hidden" />
+      <Input type="text" id="f-name" label="First Name" />
+      <Input type="text" id="l-name" label="Last Name" />
+      <Input type="text" id="title" label="Title" />
+      <Input type="number" id="phone" label="phone Number" />
     </form>
   );
 }
