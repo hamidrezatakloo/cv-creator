@@ -1,4 +1,3 @@
-import Input from "./Input";
 function Form() {
   return (
     <form className="col-span-6 grid grid-cols-3">
@@ -9,11 +8,36 @@ function Form() {
         no file chosen
       </label>
       <input type="file" id="cv-image" className="hidden" />
-      <Input type="text" id="f-name" label="First Name" />
-      <Input type="text" id="l-name" label="Last Name" />
-      <Input type="text" id="title" label="Title" />
-      <Input type="number" id="phone" label="phone Number" />
-      <Input type="email" id="email" label="Email" />
+      <div className=" inline-flex flex-col mx-4">
+        <label htmlFor={"f-name"} className="text-stone-500">
+          First Name
+        </label>
+        <input type="text" id="f-name" className="bg-gray-100" />
+      </div>
+      <div className=" inline-flex flex-col mx-4">
+        <label htmlFor={"l-name"} className="text-stone-500">
+          Last Name
+        </label>
+        <input type="text" id="l-name" className="bg-gray-100" />
+      </div>
+      <div className=" inline-flex flex-col mx-4">
+        <label htmlFor={"title"} className="text-stone-500">
+          Title
+        </label>
+        <input type="text" id="title" className="bg-gray-100" />
+      </div>
+      <div className=" inline-flex flex-col mx-4">
+        <label htmlFor={"phone"} className="text-stone-500">
+          phone Number
+        </label>
+        <input type="number" id="phone" className="bg-gray-100" />
+      </div>
+      <div className=" inline-flex flex-col mx-4">
+        <label htmlFor={"email"} className="text-stone-500">
+          Email Address
+        </label>
+        <input type="email" id="email" className="bg-gray-100" />
+      </div>
       <div className=" inline-flex flex-col mx-4">
         <label htmlFor="address" className="text-stone-500">
           Address
