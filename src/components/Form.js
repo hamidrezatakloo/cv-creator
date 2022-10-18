@@ -1,5 +1,5 @@
 function Form() {
-  return <div></div>;
+  return <form className="col-span-6"></form>;
 }
 
 export default Form;

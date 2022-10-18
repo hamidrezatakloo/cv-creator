@@ -1,5 +1,5 @@
 function View() {
-  return <div></div>;
+  return <div className="col-span-6"></div>;
 }
 
 export default View;
