@@ -3,9 +3,9 @@ function Info(props) {
     <form className="grid grid-cols-3">
       <label
         htmlFor="cv-image"
-        className="block row-span-2 bg-gray-300 flex justify-center items-center px-4 py-4 cursor-pointer mx-4"
+        className="block row-span-2 bg-gray-200 flex justify-center items-center px-4 py-4 cursor-pointer mx-4"
       >
-        no file chosen
+        upload image
       </label>
       <input type="file" id="cv-image" className="hidden" />
       <div className=" inline-flex flex-col  mx-4">
