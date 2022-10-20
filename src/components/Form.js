@@ -10,7 +10,7 @@ function Form() {
     <div className="col-span-6 border-2 border-gray-200 shadow-lg py-4">
       <Info />
       {exp.map((id) => (
-        <Experience key={id} />
+        <Experience key={id} id={id} setExp={setExp} />
       ))}
       <button
         className="w-full mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
