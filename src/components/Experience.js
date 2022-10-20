@@ -29,6 +29,9 @@ function Experience(props) {
   const handleRemove = (e) => {
     e.preventDefault();
     props.setExp((prevState) => prevState.filter((id) => id !== props.id));
+
+    const temp = context.blocks.filter((obj) => obj.id !== data.id);
+    context.updateBlocks(temp);
   };
   return (
     <Fragment>
