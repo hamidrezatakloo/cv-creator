@@ -11,10 +11,17 @@ function App() {
     setBl(data);
   };
   const [src, setSrc] = useState("/placeholder.svg");
-
+  const [info, setInfo] = useState({
+    title: "",
+    "f-name": "",
+    "l-name": "",
+    phone: "",
+    email: "",
+    address: "",
+  });
   return (
     <blockContext.Provider
-      value={{ blocks, AddBlocks, updateBlocks, src, setSrc }}
+      value={{ blocks, AddBlocks, updateBlocks, src, setSrc, info, setInfo }}
     >
       <div className="App">
         <Container />
