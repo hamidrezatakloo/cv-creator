@@ -2,28 +2,29 @@ import Info from "./Info";
 import Experience from "./Experience";
 import Education from "./Education";
 import { useState } from "react";
+import uniqid from "uniqid";
 function Form() {
-  const [exp, setExp] = useState(1);
-  const [edu, setEdu] = useState(1);
+  const [exp, setExp] = useState([uniqid()]);
+  const [edu, setEdu] = useState([uniqid()]);
   return (
     <div className="col-span-6 border-2 border-gray-200 shadow-lg py-4">
       <Info />
-      {[...Array(exp)].map((v, i) => (
-        <Experience key={i} />
+      {exp.map((id) => (
+        <Experience key={id} />
       ))}
       <button
         className="w-full mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
-        onClick={() => setExp(exp + 1)}
+        onClick={() => setExp([...exp, uniqid()])}
       >
         Add
       </button>
 
-      {[...Array(edu)].map((v, i) => (
-        <Education key={i} />
+      {edu.map((id) => (
+        <Education key={id} />
       ))}
       <button
         className="w-full mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
-        onClick={() => setEdu(edu + 1)}
+        onClick={() => setEdu([...edu, uniqid()])}
       >
         Add
       </button>
