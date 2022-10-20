@@ -30,17 +30,18 @@ function Education(props) {
     <Fragment>
       <h2 className="mx-4 my-6">Education</h2>
       <form className="grid grid-cols-12">
-        <div className=" inline-flex flex-col  mx-4 col-span-6">
-          <label htmlFor={"university"} className="text-stone-500 ">
-            University Name
+        <div className=" inline-flex flex-col mx-4 col-span-6">
+          <label htmlFor={"subject"} className="text-stone-500 ">
+            Subject
           </label>
           <input
             type="text"
-            id="university"
+            id="subject"
             className="bg-gray-100"
             onChange={handleInput}
           />
         </div>
+
         <div className=" inline-flex flex-col mx-4 col-span-6">
           <label htmlFor={"degree"} className="text-stone-500 ">
             Degree
@@ -63,17 +64,19 @@ function Education(props) {
             onChange={handleInput}
           />
         </div>
-        <div className=" inline-flex flex-col mx-4 col-span-6">
-          <label htmlFor={"subject"} className="text-stone-500 ">
-            Subject
+
+        <div className=" inline-flex flex-col  mx-4 col-span-6">
+          <label htmlFor={"university"} className="text-stone-500 ">
+            University Name
           </label>
           <input
             type="text"
-            id="subject"
+            id="university"
             className="bg-gray-100"
             onChange={handleInput}
           />
         </div>
+
         <div className=" inline-flex flex-col mx-4 col-span-6">
           <label htmlFor={"from"} className="text-stone-500 ">
             From
