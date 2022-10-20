@@ -14,7 +14,7 @@ function Info(props) {
   };
 
   return (
-    <form className="grid grid-cols-3">
+    <form className="grid grid-cols-3 shadow-md py-4">
       <label
         htmlFor="cv-image"
         className="block row-span-2 bg-gray-200 flex justify-center items-center px-4 py-4 cursor-pointer mx-4"

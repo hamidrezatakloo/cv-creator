@@ -36,7 +36,7 @@ function Experience(props) {
   return (
     <Fragment>
       <h2 className="mx-4 my-6">Experience</h2>
-      <form className="grid grid-cols-12">
+      <form className="grid grid-cols-12 shadow py-4">
         <div className=" inline-flex flex-col  mx-4 col-span-4">
           <label htmlFor={"position"} className="text-stone-500 ">
             Position

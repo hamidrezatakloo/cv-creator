@@ -37,7 +37,7 @@ function Education(props) {
   return (
     <Fragment>
       <h2 className="mx-4 my-6">Education</h2>
-      <form className="grid grid-cols-12">
+      <form className="grid grid-cols-12 shadow py-4">
         <div className=" inline-flex flex-col mx-4 col-span-6">
           <label htmlFor={"subject"} className="text-stone-500 ">
             Subject
