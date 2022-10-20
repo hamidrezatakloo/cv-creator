@@ -1,9 +1,12 @@
-import image from "./../rick.jpeg";
+import { useContext } from "react";
+import { blockContext } from "../App";
 function Profile() {
+  const context = useContext(blockContext);
+
   return (
     <div className="flex flex-col">
       <div>
-        <img src={image} alt="profile" className="w-[200px] rounded" />
+        <img src={context.src} alt="profile" className="w-[200px] rounded" />
         <h2 className="capitalize text-cyan-500 font-bold text-2xl">
           senior developer
         </h2>
