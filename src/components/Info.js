@@ -1,4 +1,11 @@
+import { useContext } from "react";
+import { blockContext } from "../App";
 function Info(props) {
+  const context = useContext(blockContext);
+  console.log(context.src);
+  const handleFileInput = (e) => {
+    context.setSrcImage(URL.createObjectURL(e.target.files[0]));
+  };
   return (
     <form className="grid grid-cols-3">
       <label
@@ -7,7 +14,12 @@ function Info(props) {
       >
         upload image
       </label>
-      <input type="file" id="cv-image" className="hidden" />
+      <input
+        type="file"
+        id="cv-image"
+        className="hidden"
+        onChange={handleFileInput}
+      />
       <div className=" inline-flex flex-col  mx-4">
         <label htmlFor={"f-name"} className="text-stone-500 ">
           First Name
