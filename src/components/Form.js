@@ -13,7 +13,7 @@ function Form() {
         <Experience key={id} id={id} setExp={setExp} />
       ))}
       <button
-        className="w-full mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
+        className="w-10/12 mx-auto block mt-4 bg-emerald-300 text-white  text-lg font-medium py-1 rounded"
         onClick={() => setExp([...exp, uniqid()])}
       >
         Add Experience
@@ -23,7 +23,7 @@ function Form() {
         <Education key={id} id={id} setEdu={setEdu} />
       ))}
       <button
-        className="w-full mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
+        className="w-10/12 mx-auto block mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
         onClick={() => setEdu([...edu, uniqid()])}
       >
         Add Education
