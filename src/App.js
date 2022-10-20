@@ -12,12 +12,9 @@ function App() {
   };
   const [src, setSrc] = useState("/placeholder.svg");
 
-  const setSrcImage = (url) => {
-    setSrc(url);
-  };
   return (
     <blockContext.Provider
-      value={{ blocks, AddBlocks, updateBlocks, src, setSrcImage }}
+      value={{ blocks, AddBlocks, updateBlocks, src, setSrc }}
     >
       <div className="App">
         <Container />

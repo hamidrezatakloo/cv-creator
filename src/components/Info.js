@@ -4,7 +4,7 @@ function Info(props) {
   const context = useContext(blockContext);
   console.log(context.src);
   const handleFileInput = (e) => {
-    context.setSrcImage(URL.createObjectURL(e.target.files[0]));
+    context.setSrc(URL.createObjectURL(e.target.files[0]));
   };
   return (
     <form className="grid grid-cols-3">
