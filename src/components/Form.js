@@ -16,7 +16,7 @@ function Form() {
         className="w-full mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
         onClick={() => setExp([...exp, uniqid()])}
       >
-        Add
+        Add Experience
       </button>
 
       {edu.map((id) => (
@@ -26,7 +26,7 @@ function Form() {
         className="w-full mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
         onClick={() => setEdu([...edu, uniqid()])}
       >
-        Add
+        Add Education
       </button>
     </div>
   );
