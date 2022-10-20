@@ -83,7 +83,7 @@ function Experience(props) {
             To
           </label>
           <input
-            type="email"
+            type="number"
             id="to"
             className="bg-gray-100"
             onChange={handleInput}
