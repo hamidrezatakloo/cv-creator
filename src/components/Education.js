@@ -26,6 +26,11 @@ function Education(props) {
     );
     context.updateBlocks(temp);
   };
+
+  const handleRemove = (e) => {
+    e.preventDefault();
+    props.setEdu((prevState) => prevState.filter((id) => id !== props.id));
+  };
   return (
     <Fragment>
       <h2 className="mx-4 my-6">Education</h2>
@@ -99,6 +104,12 @@ function Education(props) {
             onChange={handleInput}
           />
         </div>
+        <button
+          className="col-start-1 col-end-13 mt-4 bg-rose-400 text-white text-lg font-medium py-1 rounded"
+          onClick={handleRemove}
+        >
+          Delete
+        </button>
       </form>
     </Fragment>
   );
