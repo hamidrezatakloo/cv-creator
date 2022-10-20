@@ -20,7 +20,7 @@ function Form() {
       </button>
 
       {edu.map((id) => (
-        <Education key={id} />
+        <Education key={id} id={id} setEdu={setEdu} />
       ))}
       <button
         className="w-full mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
