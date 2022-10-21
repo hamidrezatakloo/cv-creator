@@ -66,7 +66,9 @@ function Form() {
         <Experience key={id} id={id} setExp={setExp} exp={exp} />
       ))}
       <button
-        className="w-10/12 mx-auto block mt-4 bg-emerald-300 text-white  text-lg font-medium py-1 rounded"
+        className="w-10/12 mx-auto block mt-4 bg-emerald-300 text-white  text-lg font-medium py-1 rounded
+        hover:bg-emerald-500 transition delay-150
+        ease-in-out hover:-translate-y-1  hover:animate-pulse"
         onClick={() => setExp([...exp, uniqid()])}
       >
         Add Experience
@@ -76,7 +78,9 @@ function Form() {
         <Education key={id} id={id} setEdu={setEdu} edu={edu} />
       ))}
       <button
-        className="w-10/12 mx-auto block mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"
+        className="w-10/12 mx-auto block mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded
+        hover:bg-emerald-500 transition delay-150
+          ease-in-out hover:-translate-y-1  hover:animate-pulse"
         onClick={() => setEdu([...edu, uniqid()])}
       >
         Add Education
@@ -84,7 +88,8 @@ function Form() {
 
       <button
         className="w-10/12 mx-auto block my-6 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
-       text-white text-lg font-medium py-1 rounded"
+       text-white text-lg font-medium py-1 rounded transition delay-150
+       ease-in-out hover:-translate-y-1  hover:animate-pulse"
         onClick={LoadSample}
       >
         Load sample
@@ -92,7 +97,8 @@ function Form() {
 
       <button
         className="w-10/12 mx-auto block my-6 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
-       text-white text-lg font-medium py-1 rounded"
+       text-white text-lg font-medium py-1 rounded transition delay-150
+        ease-in-out hover:-translate-y-1  hover:animate-pulse"
         onClick={Reset}
       >
         Reset

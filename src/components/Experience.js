@@ -95,7 +95,9 @@ function Experience(props) {
           />
         </div>
         <button
-          className="col-start-2 col-end-12 mt-4 bg-rose-400 text-white text-lg font-medium py-1 rounded"
+          className="col-start-2 col-end-12 mt-4 bg-rose-400 text-white text-lg 
+          font-medium py-1 rounded hover:bg-rose-500 transition delay-150
+          ease-in-out hover:-translate-y-1  hover:animate-pulse"
           onClick={handleRemove}
         >
           Delete
