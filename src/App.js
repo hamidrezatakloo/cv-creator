@@ -10,7 +10,7 @@ function App() {
   const updateBlocks = (data) => {
     setBl(data);
   };
-  const [src, setSrc] = useState("/placeholder.svg");
+  const [src, setSrc] = useState("./placeholder.svg");
   const [info, setInfo] = useState({
     title: "",
     "f-name": "",
