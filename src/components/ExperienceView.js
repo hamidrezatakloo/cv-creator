@@ -11,9 +11,9 @@ function ExperienceView({ block }) {
         </div>
       </div>
       <div>
-        <span>{block.company}</span>
+        <span className="p-1">{block.company}</span>
         {block.company ? "," : ""}
-        <span>{block.city}</span>
+        <span className="p-1">{block.city}</span>
       </div>
     </div>
   );

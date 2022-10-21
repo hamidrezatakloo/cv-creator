@@ -11,11 +11,11 @@ function EducationView({ block }) {
         </div>
       </div>
       <div>
-        <span>{block.university}</span>
+        <span className="p-1">{block.university}</span>
         {block.university ? "," : ""}
-        <span>{block.city}</span>
+        <span className="p-1">{block.city}</span>
         {block.city ? "," : ""}
-        <span>{block.degree}</span>
+        <span className="p-1">{block.degree}</span>
       </div>
     </div>
   );
