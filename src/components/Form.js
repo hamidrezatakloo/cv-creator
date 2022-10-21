@@ -61,7 +61,7 @@ function Form() {
     context.updateBlocks(temp);
   };
   return (
-    <div className="col-span-6 border-2 border-gray-200 shadow-lg py-4">
+    <div className="col-span-6 border-2 border-gray-200 shadow-lg py-4 min-w-[400px]">
       <Info />
       {exp.map((id) => (
         <Experience key={id} id={id} setExp={setExp} exp={exp} />
