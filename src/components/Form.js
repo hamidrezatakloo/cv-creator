@@ -24,6 +24,8 @@ function Form() {
     });
   };
   const LoadSample = () => {
+    Reset();
+
     // set profile image
     context.setSrc("./rick.jpeg");
     // set information
@@ -36,31 +38,24 @@ function Form() {
       address: "plotonium highway morty street p22",
     });
 
-    const expSample = {
-      position: "senior web developer",
-      company: "facebook",
-      city: "Ink",
-      from: "2018",
-      to: "2020",
-    };
-    const eduSample = {
-      university: "University of Technology",
-      degree: "Master",
-      city: "Oklahoma",
-      subject: "Science",
-      from: "2015",
-      to: "2018",
-    };
-    //reset to as single edu and exp
-    context.updateBlocks([]);
-    setExp([uniqid()]);
-    setEdu([uniqid()]);
-
-    const temp = context.blocks.map((obj) =>
-      obj.title === "Experience"
-        ? { ...obj, ...expSample }
-        : { ...obj, ...eduSample }
-    );
+    let temp = context.blocks.slice(0, 2);
+    temp.map((obj) => {
+      if (obj.title == "Experience") {
+        obj.position = "senior web developer";
+        obj.company = "facebook";
+        obj.city = "Ink";
+        obj.from = "2018";
+        obj.to = "2020";
+        return obj;
+      } else {
+        obj.university = "University of Technology";
+        obj.degree = "Master";
+        obj.city = "Oklahoma";
+        obj.subject = "Science";
+        obj.from = "2015";
+        obj.to = "2018";
+      }
+    });
 
     context.updateBlocks(temp);
   };
