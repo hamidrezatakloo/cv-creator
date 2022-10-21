@@ -9,6 +9,20 @@ function Form() {
   const [edu, setEdu] = useState([uniqid()]);
 
   const context = useContext(blockContext);
+  const Reset = () => {
+    context.updateBlocks([]);
+    setExp([uniqid()]);
+    setEdu([uniqid()]);
+    context.setSrc("./placeholder.svg");
+    context.setInfo({
+      title: "",
+      "f-name": "",
+      "l-name": "",
+      phone: "",
+      email: "",
+      address: "",
+    });
+  };
   const LoadSample = () => {
     // set profile image
     context.setSrc("./rick.jpeg");
@@ -79,6 +93,14 @@ function Form() {
         onClick={LoadSample}
       >
         Load sample
+      </button>
+
+      <button
+        className="w-10/12 mx-auto block my-6 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
+       text-white text-lg font-medium py-1 rounded"
+        onClick={Reset}
+      >
+        Reset
       </button>
     </div>
   );
