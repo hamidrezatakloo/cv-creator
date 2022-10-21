@@ -14,6 +14,7 @@ function Education(props) {
     to: "",
   });
   useEffect(() => {
+    if (context.blocks.length === 2) return;
     // add this instance state to blocks context
     context.AddBlocks(data);
   }, []);
