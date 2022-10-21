@@ -1,6 +1,6 @@
 function EducationView({ block }) {
   return (
-    <div className="text-cyan-500 my-4">
+    <div className="text-cyan-500 my-4 border-b-2 border-cyan-500 py-2">
       <h1 className="text-lg font-bold">{block.title}</h1>
       <div className="flex justify-between my-4">
         <h2 className="text-black text-xl font-bold capitalize">
