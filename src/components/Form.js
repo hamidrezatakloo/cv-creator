@@ -51,7 +51,7 @@ function Form() {
         obj.university = "University of Technology";
         obj.degree = "Master";
         obj.city = "Oklahoma";
-        obj.subject = "Science";
+        obj.subject = "teach";
         obj.from = "2015";
         obj.to = "2018";
       }
