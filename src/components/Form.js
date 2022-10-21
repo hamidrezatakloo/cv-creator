@@ -54,7 +54,7 @@ function Form() {
     <div className="col-span-6 border-2 border-gray-200 shadow-lg py-4">
       <Info />
       {exp.map((id) => (
-        <Experience key={id} id={id} setExp={setExp} />
+        <Experience key={id} id={id} setExp={setExp} exp={exp} />
       ))}
       <button
         className="w-10/12 mx-auto block mt-4 bg-emerald-300 text-white  text-lg font-medium py-1 rounded"
@@ -64,7 +64,7 @@ function Form() {
       </button>
 
       {edu.map((id) => (
-        <Education key={id} id={id} setEdu={setEdu} />
+        <Education key={id} id={id} setEdu={setEdu} edu={edu} />
       ))}
       <button
         className="w-10/12 mx-auto block mt-4 bg-emerald-300 text-white text-lg font-medium py-1 rounded"

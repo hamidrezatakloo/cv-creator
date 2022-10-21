@@ -12,8 +12,9 @@ function Experience(props) {
     from: "",
     to: "",
   });
+
   useEffect(() => {
-    if (context.blocks.length === 2) return;
+    if (context.blocks.length === 2 && props.exp.length === 1) return;
     // add this instance state to blocks context
     context.AddBlocks(data);
   }, []);
