@@ -40,7 +40,7 @@ function Form() {
 
     let temp = context.blocks.slice(0, 2);
     temp.map((obj) => {
-      if (obj.title == "Experience") {
+      if (obj.title === "Experience") {
         obj.position = "senior web developer";
         obj.company = "facebook";
         obj.city = "Ink";
@@ -54,6 +54,7 @@ function Form() {
         obj.subject = "teach";
         obj.from = "2015";
         obj.to = "2018";
+        return obj;
       }
     });
 
