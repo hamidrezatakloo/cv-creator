@@ -34,7 +34,7 @@ function Info(props) {
         <input
           type="text"
           id="f-name"
-          className="bg-gray-100"
+          className="bg-gray-200"
           onChange={handleInfo}
         />
       </div>
@@ -45,7 +45,7 @@ function Info(props) {
         <input
           type="text"
           id="l-name"
-          className="bg-gray-100"
+          className="bg-gray-200"
           onChange={handleInfo}
         />
       </div>
@@ -56,7 +56,7 @@ function Info(props) {
         <input
           type="text"
           id="title"
-          className="bg-gray-100"
+          className="bg-gray-200"
           onChange={handleInfo}
         />
       </div>
@@ -67,7 +67,7 @@ function Info(props) {
         <input
           type="number"
           id="phone"
-          className="bg-gray-100"
+          className="bg-gray-200"
           onChange={handleInfo}
         />
       </div>
@@ -78,7 +78,7 @@ function Info(props) {
         <input
           type="email"
           id="email"
-          className="bg-gray-100"
+          className="bg-gray-200"
           onChange={handleInfo}
         />
       </div>
@@ -90,7 +90,7 @@ function Info(props) {
           id="address"
           rows="4"
           cols="50"
-          className="bg-gray-100"
+          className="bg-gray-200"
           onChange={handleInfo}
         ></textarea>
       </div>

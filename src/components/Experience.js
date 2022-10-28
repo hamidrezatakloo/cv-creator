@@ -46,7 +46,7 @@ function Experience(props) {
           <input
             type="text"
             id="position"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -57,7 +57,7 @@ function Experience(props) {
           <input
             type="text"
             id="company"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -68,7 +68,7 @@ function Experience(props) {
           <input
             type="text"
             id="city"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -79,7 +79,7 @@ function Experience(props) {
           <input
             type="number"
             id="from"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -90,7 +90,7 @@ function Experience(props) {
           <input
             type="number"
             id="to"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>

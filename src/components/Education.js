@@ -46,7 +46,7 @@ function Education(props) {
           <input
             type="text"
             id="subject"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -58,7 +58,7 @@ function Education(props) {
           <input
             type="text"
             id="degree"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -69,7 +69,7 @@ function Education(props) {
           <input
             type="text"
             id="city"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -81,7 +81,7 @@ function Education(props) {
           <input
             type="text"
             id="university"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -93,7 +93,7 @@ function Education(props) {
           <input
             type="number"
             id="from"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
@@ -104,7 +104,7 @@ function Education(props) {
           <input
             type="number"
             id="to"
-            className="bg-gray-100"
+            className="bg-gray-200"
             onChange={handleInput}
           />
         </div>
